@@ -6,12 +6,8 @@ public class DigitSum {
         while (num > 0) {
             int res = num % 10;
             sum += res;
-            num = num % 10;
+            num /= 10;
         }
         return sum;
-    }
-
-    public static void main(String[] args) {
-        System.out.println(DigitSum.sum(15));
     }
 }

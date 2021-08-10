@@ -5,8 +5,4 @@ public class ModWithLoop {
         int result = n - ((n / d) * d);
         return result;
     }
-
-    public static void main(String[] args) {
-        System.out.println(ModWithLoop.mod(0, 3));
-    }
 }

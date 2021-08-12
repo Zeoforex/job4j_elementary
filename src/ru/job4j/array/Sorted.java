@@ -1,11 +1,16 @@
 package ru.job4j.array;
 
-import java.util.Arrays;
-
 public class Sorted {
     public static boolean isSorted(int[] array) {
-        int[] array1 = array.clone();
-//        array1 = Arrays.sort(array1);
-        return false;
+        boolean check = true;
+        int el;
+        for (int i = 0; i < array.length - 1; i++) {
+            el = array[i];
+            if (!(el < array[i + 1])) {
+                check = false;
+                break;
+            }
+        }
+        return check;
     }
 }

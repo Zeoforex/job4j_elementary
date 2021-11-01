@@ -3,14 +3,19 @@ package ru.job4j.array;
 import java.util.Arrays;
 
 public class ArrayWithoutEvenElements {
+    /**
+     * Из обычного массива делаем массив с нечетными элементами
+     * @param data
+     * @return
+     */
     public static int[] changeData(int[] data) {
-        int withoutEven = 0;
+        int zero = 0;
         for (int i = 0; i < data.length; i++) {
             if (data[i] % 2 != 0) {
-                withoutEven++;
+                zero++;
             }
         }
-        int[] array = new int[withoutEven];
+        int[] array = new int[zero];
         int index = 0;
         for (int i = 0; i < data.length; i++) {
             if (data[i] % 2 != 0) {

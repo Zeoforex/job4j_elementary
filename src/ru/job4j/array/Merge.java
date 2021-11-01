@@ -1,6 +1,12 @@
 package ru.job4j.array;
 
 public class Merge {
+    /**
+     * Соединяет два массива в один
+     * @param left
+     * @param right
+     * @return
+     */
     public static int[] merge(int[] left, int[] right) {
         int[] rsl = new int[left.length + right.length];
         for (int i = 0; i < left.length; i++) {

@@ -1,6 +1,11 @@
 package ru.job4j.array;
 
 public class MaxLengthSeria {
+    /**
+     * Максимальная длина серии которая заканчивается новой серией
+     * @param array
+     * @return
+     */
     public static int find(int[] array) {
         int count = 1;
         if (array.length > 2) {

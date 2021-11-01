@@ -1,6 +1,11 @@
 package ru.job4j.array;
 
 public class Initials {
+    /**
+     * Нужно сделать из полного ФИО написать фамилию и инициалы
+     * @param fio
+     * @return
+     */
     public static String convert(String[] fio) {
         String result = fio[0] + " ";
         for (int i = 1; i < fio.length; i++) {

@@ -43,7 +43,7 @@ public class Point {
     }
 
     public double distance3d(Point that) {
-        double result = sqrt((that.x - this.x) * (that.x - this.x) + (that.y - this.y) * (that.y - this.y) + (that.z - this.z) * (that.z - this.z));
+        double result = sqrt(Math.pow((that.x - this.x), 2) + Math.pow((that.y - this.y), 2)  + Math.pow((that.z - this.z), 2));
         return result;
     }
 }

@@ -18,5 +18,6 @@ public class Reduce {
         Reduce reduce = new Reduce();
         reduce.to(array);
         reduce.print();
+        reduce.print();
     }
 }
